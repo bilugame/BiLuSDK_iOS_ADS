@@ -1,0 +1,6 @@
+framework module BiLuSDKADS {
+  umbrella header "BiLuSDKADS.h"
+
+  export *
+  module * { export * }
+}
