@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 
 #import <BiLuSDKADS/BiLuSDKADS.h>
 
@@ -31,7 +31,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    ViewController * root = [[ViewController alloc]init];
+    HomeViewController * root = [[HomeViewController alloc]init];
     self.window.rootViewController = root;
 
     [self.window makeKeyAndVisible];
