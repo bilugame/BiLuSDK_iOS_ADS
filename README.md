@@ -11,6 +11,7 @@
   * 2.4 [配置 Build Settings 和 Info.plist](#2.4、配置&nbsp;Build&nbsp;Settings&nbsp;和&nbsp;Info.plist)
   * 2.5 [初始化SDK](#2.5、初始化SDK)
   * 2.6 [带用户系统的初始化SDK](#2.6、带用户系统的初始化SDK)
+  * 2.7 [带登录界面的用户系统的初始化SDK](#2.7、带用登录界面的用户系统的初始化SDK（推荐使用）)
 * [3、激励视频(Rewarded Video)](#3、激励视频(Rewarded&nbsp;Video))
   * 3.1 [加载Rewarded Video](#3.1、加载Rewarded&nbsp;Video)
   * 3.2 [判断Rewarded Video是否ready](#3.2、判断Rewarded&nbsp;Video是否ready)
@@ -35,7 +36,18 @@
 ### 1.1、支持的广告类型
 BiLuSDK支持激励视频广告(rewardVideo)，banner广告和插屏广告(intersitial)。
 ### 1.2、支持用户系统
-BiLuSDK支持Game Center 和游客模式 生成用户系统。
+BiLuSDK支持手机号、账号密码和游客模式(包含gamecenter) 生成用户系统。
+
+用户参数介绍：
+<pre><code>
+/// 用户昵称
+@property(nonatomic, copy) NSString *alias;
+/// 用户id
+@property(nonatomic, copy) NSString *playerID;
+//登录注册回调消息（带注册界面的SDK初始化使用，其他忽略）
+@property(nonatomic, copy) NSString *registerCode;
+
+</code></pre>
 ### 1.3、用户真实性验证
 [用户真实性验证说明](Server_user.md)
 
