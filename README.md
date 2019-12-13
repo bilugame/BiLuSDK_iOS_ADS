@@ -60,7 +60,7 @@ BiLuSDK支持手机号、账号密码和游客模式(包含gamecenter) 生成用
 核心模块包含以下框架和资源包文件，只需将它们拖放到Xcode中。
 
 - BiLuSDKADS.framework
-
+- BiLuSDK.bundle
 
 **注:** 由于**BiLuSDK**暂时不支持cocoapod
 
@@ -148,6 +148,20 @@ BiLuSDK支持手机号、账号密码和游客模式(包含gamecenter) 生成用
 
     return YES;
 }</code></pre>
+
+### 2.7、带用登录界面的用户系统的初始化SDK（推荐使用）)
+您需要在**AppDelegate**的**application:didFinishLaunchingWithOptions:**方法里面初始化**BiLuSDK**(必须在设置根控制器rootViewController后去初始化SDK)：
+<pre><code>
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
+    BiLuConfiguration *configuration = [BiLuConfiguration configuration];
+    [BiLuSDKManager registerViewWithAppID:@"哔噜AppId" appKey:@"哔噜AppKey" configuration:nil block:^(BiLuPlayer * _Nonnull player, NSError * _Nonnull error) {
+
+    }];
+
+    return YES;
+}
+</code></pre>
 
 ## 3、激励视频(Rewarded Video)
 在继续接入之前，您需要保证您已经完成了以上 [配置](#1) 步骤。

@@ -2,8 +2,8 @@
 //  BiLuSDKADS.h
 //  BiLuSDKADS
 //
-//  Created by 李加建 on 2019/11/15.
-//  Copyright © 2019 mobile. All rights reserved.
+//  Created by AJL on 2019/12/11.
+//  Copyright © 2019 BiLuSDKADS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,7 +15,6 @@
 #import "BiLuAdsManager+Interstitial.h"
 #import "BiLuVirtualCurrency.h"
 #import "BiLuEvent.h"
-
 //! Project version number for BiLuSDKADS.
 FOUNDATION_EXPORT double BiLuSDKADSVersionNumber;
 

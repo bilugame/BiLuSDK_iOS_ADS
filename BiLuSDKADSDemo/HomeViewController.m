@@ -47,7 +47,7 @@
 
 - (void)creatBtns {
     
-    NSArray * array = @[@"分享",@"加载Banner",@"加载激励视频",@"加载插屏",@"显示Banner",@"显示激励视频",@"显示插屏"];
+    NSArray * array = @[@"加载Banner",@"加载激励视频",@"加载插屏",@"显示Banner",@"显示激励视频",@"显示插屏"];
     CGFloat w = UIScreen.mainScreen.bounds.size.width;
     CGFloat x = (w - 150)/2;
     
@@ -56,7 +56,7 @@
         UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(x, 64 + 70*i, 150, 44)];
         btn.backgroundColor = [UIColor redColor];
         [btn setTitle:title forState:UIControlStateNormal];
-        btn.tag = 2000+i;
+        btn.tag = 2001+i;
         [self.view addSubview:btn];
         [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
