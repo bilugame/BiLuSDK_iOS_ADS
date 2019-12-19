@@ -8,20 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0D0D372423A25B4600A39BFB /* BiLuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */; };
-		0D570D2423AA3A68004B0E19 /* BUAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */; };
-		0D570D2523AA3A68004B0E19 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */; };
-		0D570D2623AA3A68004B0E19 /* AnyThinkSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */; };
-		0D570D2723AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */; };
-		0D570D2823AA3A68004B0E19 /* AnyThinkBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */; };
-		0D570D2923AA3A68004B0E19 /* AnyThinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */; };
-		0D570D2A23AA3A68004B0E19 /* AnyThinkInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */; };
-		0D570D2B23AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */; };
-		0D570D2C23AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */; };
-		0D570D2D23AA3A68004B0E19 /* AnyThinkRewardedVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */; };
 		0D570D2F23AA3B48004B0E19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2E23AA3B48004B0E19 /* StoreKit.framework */; };
 		0D570D3123AA3B97004B0E19 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D3023AA3B97004B0E19 /* Accelerate.framework */; };
 		0D570D3423AA3C86004B0E19 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D570D3323AA3C86004B0E19 /* PayViewController.m */; };
 		0DF982AB23AB7C920031B4E7 /* BiLuSDKADS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */; };
+		0DF982CA23AB81F50031B4E7 /* BUAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982B123AB81F50031B4E7 /* BUAdSDK.framework */; };
+		0DF982CB23AB81F50031B4E7 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982B223AB81F50031B4E7 /* GoogleAppMeasurement.framework */; };
+		0DF982CC23AB81F50031B4E7 /* NanoPB-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0DF982B423AB81F50031B4E7 /* NanoPB-LICENSE */; };
+		0DF982CD23AB81F50031B4E7 /* OpenMeasurement-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0DF982B523AB81F50031B4E7 /* OpenMeasurement-LICENSE */; };
+		0DF982CE23AB81F50031B4E7 /* GoogleUtilities-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0DF982B623AB81F50031B4E7 /* GoogleUtilities-LICENSE */; };
+		0DF982CF23AB81F50031B4E7 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982B723AB81F50031B4E7 /* GoogleUtilities.framework */; };
+		0DF982D023AB81F50031B4E7 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982B823AB81F50031B4E7 /* nanopb.framework */; };
+		0DF982D123AB81F50031B4E7 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982B923AB81F50031B4E7 /* GoogleMobileAds.framework */; };
+		0DF982D223AB81F50031B4E7 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DF982BA23AB81F50031B4E7 /* BUAdSDK.bundle */; };
+		0DF982D323AB81F50031B4E7 /* AnyThinkSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DF982BC23AB81F50031B4E7 /* AnyThinkSDK.bundle */; };
+		0DF982D423AB81F50031B4E7 /* AnyThinkGDTBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982BD23AB81F50031B4E7 /* AnyThinkGDTBannerAdapter.framework */; };
+		0DF982D523AB81F50031B4E7 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982BE23AB81F50031B4E7 /* AnyThinkTTRewardedVideoAdapter.framework */; };
+		0DF982D623AB81F50031B4E7 /* AnyThinkAdmobBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982BF23AB81F50031B4E7 /* AnyThinkAdmobBannerAdapter.framework */; };
+		0DF982D723AB81F50031B4E7 /* AnyThinkBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C023AB81F50031B4E7 /* AnyThinkBanner.framework */; };
+		0DF982D823AB81F50031B4E7 /* AnyThinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C123AB81F50031B4E7 /* AnyThinkSDK.framework */; };
+		0DF982D923AB81F50031B4E7 /* AnyThinkInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C223AB81F50031B4E7 /* AnyThinkInterstitial.framework */; };
+		0DF982DA23AB81F50031B4E7 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C323AB81F50031B4E7 /* AnyThinkTTInterstitialAdapter.framework */; };
+		0DF982DB23AB81F50031B4E7 /* AnyThinkTTBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C423AB81F50031B4E7 /* AnyThinkTTBannerAdapter.framework */; };
+		0DF982DC23AB81F50031B4E7 /* AnyThinkGDTRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C523AB81F50031B4E7 /* AnyThinkGDTRewardedVideoAdapter.framework */; };
+		0DF982DD23AB81F50031B4E7 /* AnyThinkAdmobRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C623AB81F50031B4E7 /* AnyThinkAdmobRewardedVideoAdapter.framework */; };
+		0DF982DE23AB81F50031B4E7 /* AnyThinkGDTInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C723AB81F50031B4E7 /* AnyThinkGDTInterstitialAdapter.framework */; };
+		0DF982DF23AB81F50031B4E7 /* AnyThinkRewardedVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C823AB81F50031B4E7 /* AnyThinkRewardedVideo.framework */; };
+		0DF982E023AB81F50031B4E7 /* AnyThinkAdmobInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982C923AB81F50031B4E7 /* AnyThinkAdmobInterstitialAdapter.framework */; };
 		37364E962382398E00104BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364E952382398E00104BA8 /* AppDelegate.m */; };
 		37364E9F2382398E00104BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364E9D2382398E00104BA8 /* Main.storyboard */; };
 		37364EA12382399000104BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37364EA02382399000104BA8 /* Assets.xcassets */; };
@@ -59,21 +72,34 @@
 
 /* Begin PBXFileReference section */
 		0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BiLuSDK.bundle; sourceTree = "<group>"; };
-		0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BUAdSDK.framework; sourceTree = "<group>"; };
-		0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
-		0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AnyThinkSDK.bundle; sourceTree = "<group>"; };
-		0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTRewardedVideoAdapter.framework; sourceTree = "<group>"; };
-		0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkBanner.framework; sourceTree = "<group>"; };
-		0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkSDK.framework; sourceTree = "<group>"; };
-		0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkInterstitial.framework; sourceTree = "<group>"; };
-		0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTInterstitialAdapter.framework; sourceTree = "<group>"; };
-		0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTBannerAdapter.framework; sourceTree = "<group>"; };
-		0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkRewardedVideo.framework; sourceTree = "<group>"; };
 		0D570D2E23AA3B48004B0E19 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0D570D3023AA3B97004B0E19 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		0D570D3223AA3C86004B0E19 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
 		0D570D3323AA3C86004B0E19 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
 		0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKADS.framework; sourceTree = "<group>"; };
+		0DF982B123AB81F50031B4E7 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BUAdSDK.framework; sourceTree = "<group>"; };
+		0DF982B223AB81F50031B4E7 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		0DF982B423AB81F50031B4E7 /* NanoPB-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		0DF982B523AB81F50031B4E7 /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		0DF982B623AB81F50031B4E7 /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		0DF982B723AB81F50031B4E7 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		0DF982B823AB81F50031B4E7 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		0DF982B923AB81F50031B4E7 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		0DF982BA23AB81F50031B4E7 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
+		0DF982BC23AB81F50031B4E7 /* AnyThinkSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AnyThinkSDK.bundle; sourceTree = "<group>"; };
+		0DF982BD23AB81F50031B4E7 /* AnyThinkGDTBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkGDTBannerAdapter.framework; sourceTree = "<group>"; };
+		0DF982BE23AB81F50031B4E7 /* AnyThinkTTRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTRewardedVideoAdapter.framework; sourceTree = "<group>"; };
+		0DF982BF23AB81F50031B4E7 /* AnyThinkAdmobBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkAdmobBannerAdapter.framework; sourceTree = "<group>"; };
+		0DF982C023AB81F50031B4E7 /* AnyThinkBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkBanner.framework; sourceTree = "<group>"; };
+		0DF982C123AB81F50031B4E7 /* AnyThinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkSDK.framework; sourceTree = "<group>"; };
+		0DF982C223AB81F50031B4E7 /* AnyThinkInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkInterstitial.framework; sourceTree = "<group>"; };
+		0DF982C323AB81F50031B4E7 /* AnyThinkTTInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTInterstitialAdapter.framework; sourceTree = "<group>"; };
+		0DF982C423AB81F50031B4E7 /* AnyThinkTTBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTBannerAdapter.framework; sourceTree = "<group>"; };
+		0DF982C523AB81F50031B4E7 /* AnyThinkGDTRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkGDTRewardedVideoAdapter.framework; sourceTree = "<group>"; };
+		0DF982C623AB81F50031B4E7 /* AnyThinkAdmobRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkAdmobRewardedVideoAdapter.framework; sourceTree = "<group>"; };
+		0DF982C723AB81F50031B4E7 /* AnyThinkGDTInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkGDTInterstitialAdapter.framework; sourceTree = "<group>"; };
+		0DF982C823AB81F50031B4E7 /* AnyThinkRewardedVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkRewardedVideo.framework; sourceTree = "<group>"; };
+		0DF982C923AB81F50031B4E7 /* AnyThinkAdmobInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkAdmobInterstitialAdapter.framework; sourceTree = "<group>"; };
 		37364E912382398E00104BA8 /* BiLuSDK_ADS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLuSDK_ADS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364E942382398E00104BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37364E952382398E00104BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,32 +137,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				37364ED823823E4600104BA8 /* libsqlite3.tbd in Frameworks */,
+				0DF982D423AB81F50031B4E7 /* AnyThinkGDTBannerAdapter.framework in Frameworks */,
+				0DF982DF23AB81F50031B4E7 /* AnyThinkRewardedVideo.framework in Frameworks */,
 				37364ED423823E3800104BA8 /* libz.tbd in Frameworks */,
 				37364ED623823E3F00104BA8 /* libc++.tbd in Frameworks */,
+				0DF982D023AB81F50031B4E7 /* nanopb.framework in Frameworks */,
+				0DF982D823AB81F50031B4E7 /* AnyThinkSDK.framework in Frameworks */,
+				0DF982DB23AB81F50031B4E7 /* AnyThinkTTBannerAdapter.framework in Frameworks */,
 				37364EDA23823E4D00104BA8 /* libresolv.9.tbd in Frameworks */,
 				0D570D3123AA3B97004B0E19 /* Accelerate.framework in Frameworks */,
+				0DF982DC23AB81F50031B4E7 /* AnyThinkGDTRewardedVideoAdapter.framework in Frameworks */,
 				37364EE223823E7100104BA8 /* CoreMotion.framework in Frameworks */,
 				37364EE423823EA000104BA8 /* AdSupport.framework in Frameworks */,
+				0DF982CA23AB81F50031B4E7 /* BUAdSDK.framework in Frameworks */,
 				37364EE623823ED200104BA8 /* SystemConfiguration.framework in Frameworks */,
 				37364EE823823EDC00104BA8 /* CoreTelephony.framework in Frameworks */,
+				0DF982CF23AB81F50031B4E7 /* GoogleUtilities.framework in Frameworks */,
 				37364EEA23823EE600104BA8 /* AVFoundation.framework in Frameworks */,
+				0DF982CB23AB81F50031B4E7 /* GoogleAppMeasurement.framework in Frameworks */,
 				37364EE023823E6100104BA8 /* CoreLocation.framework in Frameworks */,
 				37364EEC23823EEF00104BA8 /* CoreMedia.framework in Frameworks */,
 				37364EF023823FD600104BA8 /* MediaPlayer.framework in Frameworks */,
 				37364EF223823FDB00104BA8 /* WebKit.framework in Frameworks */,
+				0DF982D123AB81F50031B4E7 /* GoogleMobileAds.framework in Frameworks */,
+				0DF982D723AB81F50031B4E7 /* AnyThinkBanner.framework in Frameworks */,
+				0DF982DA23AB81F50031B4E7 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */,
+				0DF982D923AB81F50031B4E7 /* AnyThinkInterstitial.framework in Frameworks */,
 				37364EEE23823FC100104BA8 /* MobileCoreServices.framework in Frameworks */,
+				0DF982DE23AB81F50031B4E7 /* AnyThinkGDTInterstitialAdapter.framework in Frameworks */,
+				0DF982D623AB81F50031B4E7 /* AnyThinkAdmobBannerAdapter.framework in Frameworks */,
+				0DF982DD23AB81F50031B4E7 /* AnyThinkAdmobRewardedVideoAdapter.framework in Frameworks */,
 				0D570D2F23AA3B48004B0E19 /* StoreKit.framework in Frameworks */,
-				0D570D2723AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */,
+				0DF982D523AB81F50031B4E7 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */,
 				0DF982AB23AB7C920031B4E7 /* BiLuSDKADS.framework in Frameworks */,
-				0D570D2923AA3A68004B0E19 /* AnyThinkSDK.framework in Frameworks */,
-				0D570D2823AA3A68004B0E19 /* AnyThinkBanner.framework in Frameworks */,
-				0D570D2B23AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */,
-				0D570D2D23AA3A68004B0E19 /* AnyThinkRewardedVideo.framework in Frameworks */,
-				0D570D2A23AA3A68004B0E19 /* AnyThinkInterstitial.framework in Frameworks */,
-				0D570D2C23AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework in Frameworks */,
 				37364EDE23823E5B00104BA8 /* QuartzCore.framework in Frameworks */,
 				37364EDC23823E5400104BA8 /* libxml2.tbd in Frameworks */,
-				0D570D2423AA3A68004B0E19 /* BUAdSDK.framework in Frameworks */,
+				0DF982E023AB81F50031B4E7 /* AnyThinkAdmobInterstitialAdapter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,30 +186,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D570D1823AA3A68004B0E19 /* AdsSDK */ = {
+		0DF982B023AB81F50031B4E7 /* AdsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */,
-				0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */,
+				0DF982B123AB81F50031B4E7 /* BUAdSDK.framework */,
+				0DF982B223AB81F50031B4E7 /* GoogleAppMeasurement.framework */,
+				0DF982B323AB81F50031B4E7 /* Licenses */,
+				0DF982B723AB81F50031B4E7 /* GoogleUtilities.framework */,
+				0DF982B823AB81F50031B4E7 /* nanopb.framework */,
+				0DF982B923AB81F50031B4E7 /* GoogleMobileAds.framework */,
+				0DF982BA23AB81F50031B4E7 /* BUAdSDK.bundle */,
 			);
-			name = AdsSDK;
-			path = ../../../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK;
+			path = AdsSDK;
 			sourceTree = "<group>";
 		};
-		0D570D1B23AA3A68004B0E19 /* ArpuSDK */ = {
+		0DF982B323AB81F50031B4E7 /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
-				0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */,
-				0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */,
-				0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */,
-				0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */,
-				0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */,
-				0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */,
-				0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */,
-				0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */,
+				0DF982B423AB81F50031B4E7 /* NanoPB-LICENSE */,
+				0DF982B523AB81F50031B4E7 /* OpenMeasurement-LICENSE */,
+				0DF982B623AB81F50031B4E7 /* GoogleUtilities-LICENSE */,
 			);
-			name = ArpuSDK;
-			path = ../../../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK;
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		0DF982BB23AB81F50031B4E7 /* ArpuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0DF982BC23AB81F50031B4E7 /* AnyThinkSDK.bundle */,
+				0DF982BD23AB81F50031B4E7 /* AnyThinkGDTBannerAdapter.framework */,
+				0DF982BE23AB81F50031B4E7 /* AnyThinkTTRewardedVideoAdapter.framework */,
+				0DF982BF23AB81F50031B4E7 /* AnyThinkAdmobBannerAdapter.framework */,
+				0DF982C023AB81F50031B4E7 /* AnyThinkBanner.framework */,
+				0DF982C123AB81F50031B4E7 /* AnyThinkSDK.framework */,
+				0DF982C223AB81F50031B4E7 /* AnyThinkInterstitial.framework */,
+				0DF982C323AB81F50031B4E7 /* AnyThinkTTInterstitialAdapter.framework */,
+				0DF982C423AB81F50031B4E7 /* AnyThinkTTBannerAdapter.framework */,
+				0DF982C523AB81F50031B4E7 /* AnyThinkGDTRewardedVideoAdapter.framework */,
+				0DF982C623AB81F50031B4E7 /* AnyThinkAdmobRewardedVideoAdapter.framework */,
+				0DF982C723AB81F50031B4E7 /* AnyThinkGDTInterstitialAdapter.framework */,
+				0DF982C823AB81F50031B4E7 /* AnyThinkRewardedVideo.framework */,
+				0DF982C923AB81F50031B4E7 /* AnyThinkAdmobInterstitialAdapter.framework */,
+			);
+			path = ArpuSDK;
 			sourceTree = "<group>";
 		};
 		37364E882382398E00104BA8 = {
@@ -226,9 +281,9 @@
 		37364EBB23823CF900104BA8 /* BiLuSDKADS */ = {
 			isa = PBXGroup;
 			children = (
+				0DF982B023AB81F50031B4E7 /* AdsSDK */,
+				0DF982BB23AB81F50031B4E7 /* ArpuSDK */,
 				0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */,
-				0D570D1823AA3A68004B0E19 /* AdsSDK */,
-				0D570D1B23AA3A68004B0E19 /* ArpuSDK */,
 				0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */,
 			);
 			path = BiLuSDKADS;
@@ -339,12 +394,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D570D2623AA3A68004B0E19 /* AnyThinkSDK.bundle in Resources */,
+				0DF982D323AB81F50031B4E7 /* AnyThinkSDK.bundle in Resources */,
+				0DF982CC23AB81F50031B4E7 /* NanoPB-LICENSE in Resources */,
 				0D0D372423A25B4600A39BFB /* BiLuSDK.bundle in Resources */,
 				37364EA42382399000104BA8 /* LaunchScreen.storyboard in Resources */,
 				37364EA12382399000104BA8 /* Assets.xcassets in Resources */,
+				0DF982D223AB81F50031B4E7 /* BUAdSDK.bundle in Resources */,
+				0DF982CE23AB81F50031B4E7 /* GoogleUtilities-LICENSE in Resources */,
 				37364E9F2382398E00104BA8 /* Main.storyboard in Resources */,
-				0D570D2523AA3A68004B0E19 /* BUAdSDK.bundle in Resources */,
+				0DF982CD23AB81F50031B4E7 /* OpenMeasurement-LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +589,8 @@
 					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK\"",
 					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK\"",
 					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS",
+					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/AdsSDK",
+					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/ArpuSDK",
 				);
 				INFOPLIST_FILE = BiLuSDKADSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -560,6 +620,8 @@
 					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK\"",
 					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK\"",
 					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS",
+					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/AdsSDK",
+					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/ArpuSDK",
 				);
 				INFOPLIST_FILE = BiLuSDKADSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
