@@ -1,14 +1,10 @@
 //
-//  HomeViewController.m
-//  BiLuSDKADSDemo
+//  ViewController.m
+//  BiLuSDKDevDemo
 //
-//  Created by John on 2019/11/18.
-//  Copyright © 2019 mobile. All rights reserved.
+//  Created by ALLW on 2019/10/8.
+//  Copyright © 2019 bilu. All rights reserved.
 //
-
-#import "HomeViewController.h"
-
-#import <BiLuSDKADS/BiLuSDKADS.h>
 
 #define BIScreenWidth       [UIScreen mainScreen].bounds.size.width
 
@@ -16,15 +12,16 @@
 
 #define BIScreenBounds      [UIScreen mainScreen].bounds
 
-#define BIWeakSelf          __weak __typeof(self) weakSelf = self;
-
 #define BIBottomBarHeight   (BIScreenHeight >= 812.0 ? 34 : 0)
 
-#define BILog(msg,obj) NSLog(@"\n---------------BILU-----------------\n\n\n%@:%@\n\n\n------------------------------------",msg,obj)
+#define BIWeakSelf          __weak __typeof(self) weakSelf = self;
+#import "HomeViewController.h"
 
-#define BIMsgLog(msg) NSLog(@"\n---------------BILU-----------------\n\n\n%@\n\n\n------------------------------------",msg)
+#import <BiLuSDKADS/BiLuSDKADS.h>
 
-@interface HomeViewController () <BiLuAdsLoadingDelegate,BiLuAdsRewardedVideoDelegate,BiLuAdsInterstitialDelegate,BiLuAdsBannerDelegate>
+#import "PayViewController.h"
+
+@interface  HomeViewController() <BiLuAdsLoadingDelegate,BiLuAdsRewardedVideoDelegate,BiLuAdsInterstitialDelegate,BiLuAdsBannerDelegate>
 
 //加载控件
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
@@ -36,45 +33,53 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+
+
+//    [BiLuVirtualCurrency appStoreReceipt:^(NSDictionary * _Nonnull json, NSError * _Nonnull error) {
+//
+//
+//    }];
     
-    [BiLuEvent onbiLuEvent:@"launch" eventData:@{@"time":@"2019-11-12",@"user":@"aaa"}];
+    [BiLuEvent onbiLuEvent:@"GameLaunch" eventData:@{@"StartTime":@(1),@"UserID":@""}];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self creatBtns];
     [self.view addSubview:self.activityIndicator];
+
+
 }
 
-
 - (void)creatBtns {
-    
-    NSArray * array = @[@"加载Banner",@"加载激励视频",@"加载插屏",@"显示Banner",@"显示激励视频",@"显示插屏"];
+
+    NSArray * array = @[@"内购",@"加载Banner",@"加载激励视频",@"加载插屏",@"显示Banner",@"显示激励视频",@"显示插屏",@"充值"];
     CGFloat w = UIScreen.mainScreen.bounds.size.width;
     CGFloat x = (w - 150)/2;
-    
+
     for(int i = 0; i<array.count; i++){
         NSString * title = array[i];
         UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(x, 64 + 70*i, 150, 44)];
         btn.backgroundColor = [UIColor redColor];
         [btn setTitle:title forState:UIControlStateNormal];
-        btn.tag = 2001+i;
+        btn.tag = 2000+i;
         [self.view addSubview:btn];
         [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
 }
 
 - (void)btnAction:(UIButton*)btn {
     
     NSInteger tag = btn.tag - 2000;
-    
+
     if(tag == 0){
-        
-        
+        [[BiLuVirtualCurrency shareIAPManager] startIAPWithProductID:@"sssn_yuanshi_6" trackingcode:@{} type:NO completeHandle:^(BiLuIAPResultType type, NSDictionary * _Nonnull data) {
+            NSLog(@"%@",data);
+        }];
+
         return;
     }
-    
+
     [self.activityIndicator startAnimating];
-    
+
     if (tag == 1){
         [self loadBanner:btn];
     }else if (tag == 2){
@@ -89,11 +94,9 @@
         [self showInter:btn];
     }else if (tag == 7){
         [self.activityIndicator stopAnimating];
-        //        [[BiLuAdsManager sharedInstance] clearCache];
-        //        [self showAlertMessage:[NSString stringWithFormat:@"清除所有广告缓存"]];
-        //
-        //        PayViewController * nextVC = [[PayViewController alloc]init];
-        //        [self presentViewController:nextVC animated:YES completion:nil];
+
+        PayViewController * nextVC = [[PayViewController alloc]init];
+        [self presentViewController:nextVC animated:YES completion:nil];
     }
     
 }
@@ -101,7 +104,7 @@
 - (void)loadBanner:(UIButton *)sender {
     
     CGFloat with = BIScreenWidth;
-    [[BiLuAdsManager sharedInstance] loadADWithPlacementId:@"b5d9c296b43454" extra:@{kUPArpuAdLoadingExtraBannerAdSizeKey:[NSValue valueWithCGSize:CGSizeMake(with, with/6.4)]} type:BiLuAdsTypeBanner delegate:self];
+    [[BiLuAdsManager sharedInstance] loadADWithPlacementId:@"b5d9c296b43454" extra:@{kATAdLoadingExtraBannerAdSizeKey:[NSValue valueWithCGSize:CGSizeMake(with, with/6.4)]} type:BiLuAdsTypeBanner delegate:self];
     
 }
 
@@ -132,14 +135,14 @@
     NSInteger tag = 3333;
     
     [[self.view viewWithTag:tag] removeFromSuperview];
-    
-    UPArpuBannerView *bannerView = [[BiLuAdsManager sharedInstance] retrieveBannerViewForPlacementId:@"b5d9c296b43454" delegate:self];
+
+    ATBannerView *bannerView = [[BiLuAdsManager sharedInstance] retrieveBannerViewForPlacementId:@"b5d9c296b43454" delegate:self];
     bannerView.translatesAutoresizingMaskIntoConstraints = NO;
     bannerView.tag = tag;
     [self.view addSubview:bannerView];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:bannerView attribute:NSLayoutAttributeBottom multiplier:1.0f constant:BIBottomBarHeight]];
-    //    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1.0f constant:self.view.frame.size.width]];
-    //    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1.0f constant:64.0f]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1.0f constant:self.view.frame.size.width]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1.0f constant:64.0f]];
 }
 
 - (void)showRewarded:(UIButton *)sender {
@@ -153,7 +156,7 @@
 }
 
 - (void)showInter:(UIButton *)sender {
-    
+
     if ([[BiLuAdsManager sharedInstance] interstitialReadyForPlacementId:@"b5d9c29a079a32"]) {
         [[BiLuAdsManager sharedInstance] showInterstitialWithPlacementId:@"b5d9c29a079a32" inViewController:self delegate:self];
     }else{
@@ -168,7 +171,6 @@
     
     [self showAlertMessage:[NSString stringWithFormat:@"加载广告成功\nPlacementId:%@",placementId]];
     [self.activityIndicator stopAnimating];
-    BILog(@"广告加载成功 PlacementId",placementId);
 }
 
 - (void)didFailToLoadADWithPlacementId:(NSString*)placementId error:(NSError*)error{
@@ -180,44 +182,43 @@
 
 #pragma mark - BiluAdBannerDelegate
 
-- (void)bannerView:(UPArpuBannerView *)bannerView didShowAdWithPlacementId:(NSString *)placementId{
+- (void)bannerView:(ATBannerView *)bannerView didShowAdWithPlacementId:(NSString *)placementId{
     
     [self.activityIndicator stopAnimating];
     [self showAlertMessage:[NSString stringWithFormat:@"显示Banner成功 PlacementId:%@",placementId]];
-    BILog(@"bannerView didShowAdWithPlacementId",placementId);
 }
-- (void)bannerView:(UPArpuBannerView *)bannerView didClickWithPlacementId:(NSString *)placementId{
+- (void)bannerView:(ATBannerView *)bannerView didClickWithPlacementId:(NSString *)placementId{
+    
+     [self.activityIndicator stopAnimating];
+
+}
+- (void)bannerView:(ATBannerView *)bannerView didCloseWithPlacementId:(NSString *)placementId{
     
     [self.activityIndicator stopAnimating];
-    BILog(@"bannerView didClickWithPlacementId",placementId);
+
 }
-- (void)bannerView:(UPArpuBannerView *)bannerView didCloseWithPlacementId:(NSString *)placementId{
+- (void)bannerView:(ATBannerView *)bannerView didAutoRefreshWithPlacementId:(NSString *)placementId{
     
-    [self.activityIndicator stopAnimating];
-    BILog(@"bannerView didCloseWithPlacementId",placementId);
+     [self.activityIndicator stopAnimating];
+  
 }
-- (void)bannerView:(UPArpuBannerView *)bannerView didAutoRefreshWithPlacementId:(NSString *)placementId{
+- (void)bannerView:(ATBannerView *)bannerView failedToAutoRefreshWithPlacementId:(NSString *)placementId error:(NSError*)error{
     
-    [self.activityIndicator stopAnimating];
-    BILog(@"bannerView didAutoRefreshWithPlacementId",placementId);
-}
-- (void)bannerView:(UPArpuBannerView *)bannerView failedToAutoRefreshWithPlacementId:(NSString *)placementId error:(NSError*)error{
-    
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"bannerView failedToAutoRefreshWithPlacementId：%@ error：%@",placementId,error);
 }
 
 #pragma mark - BiluAdRewardedVideoDelegate
 
 - (void)rewardedVideoDidStartPlayingForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
-    
+
     [self.activityIndicator stopAnimating];
-    //    [self showAlertMessage:[NSString stringWithFormat:@"播放激励视频广告成功 PlacementId:%@",placementId]];
+//    [self showAlertMessage:[NSString stringWithFormat:@"播放激励视频广告成功 PlacementId:%@",placementId]];
     NSLog(@"rewardedVideoDidStartPlayingForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)rewardedVideoDidEndPlayingForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"rewardedVideoDidEndPlayingForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)rewardedVideoDidFailToPlayForPlacementId:(NSString *)placementId error:(NSError *)error extra:(NSDictionary *)extra{
@@ -228,12 +229,12 @@
 }
 - (void)rewardedVideoDidCloseForPlacementId:(NSString *)placementId rewarded:(BOOL)rewarded extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"rewardedVideoDidCloseForPlacementId：%@ rewarded：%d extra：%@",placementId,rewarded,extra);
 }
 - (void)rewardedVideoDidClickForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"rewardedVideoDidClickForPlacementId：%@ extra：%@",placementId,extra);
 }
 
@@ -242,6 +243,7 @@
 - (void)interstitialDidShowForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
     [self.activityIndicator stopAnimating];
+//    [self showAlertMessage:[NSString stringWithFormat:@"显示插屏广告成功 PlacementId:%@",placementId]];
     NSLog(@"interstitialDidShowForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)interstitialFailedToShowForPlacementId:(NSString *)placementId error:(NSError *)error extra:(NSDictionary *)extra{
@@ -252,27 +254,27 @@
 }
 - (void)interstitialDidStartPlayingVideoForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"interstitialDidStartPlayingVideoForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)interstitialDidEndPlayingVideoForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"interstitialDidEndPlayingVideoForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)interstitialDidFailToPlayVideoForPlacementId:(NSString *)placementId error:(NSError *)error extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"interstitialDidFailToPlayVideoForPlacementId：%@ error：%@ extra：%@",placementId,error,extra);
 }
 - (void)interstitialDidCloseForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"interstitialDidCloseForPlacementId：%@ extra：%@",placementId,extra);
 }
 - (void)interstitialDidClickForPlacementId:(NSString *)placementId extra:(NSDictionary *)extra{
     
-    [self.activityIndicator stopAnimating];
+     [self.activityIndicator stopAnimating];
     NSLog(@"interstitialDidClickForPlacementId：%@ extra：%@",placementId,extra);
 }
 
@@ -287,7 +289,7 @@
         //设置背景颜色
         _activityIndicator.backgroundColor = [UIColor clearColor];
         //刚进入这个界面会显示控件，并且停止旋转也会显示，只是没有在转动而已，没有设置或者设置为YES的时候，刚进入页面不会显示
-        //        _activityIndicator.hidesWhenStopped = NO;
+//        _activityIndicator.hidesWhenStopped = NO;
     }
     return _activityIndicator;
 }
@@ -297,14 +299,15 @@
     BIWeakSelf
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* action = [UIAlertAction
-                             actionWithTitle:@"取消" style:UIAlertActionStyleDefault
-                             handler:^(UIAlertAction * _Nonnull action) {
-                                 [weakSelf dismissViewControllerAnimated:YES completion:nil];
-                                 [weakSelf.activityIndicator stopAnimating];
-                             }];
+                              actionWithTitle:@"取消" style:UIAlertActionStyleDefault
+                              handler:^(UIAlertAction * _Nonnull action) {
+                                  [weakSelf dismissViewControllerAnimated:YES completion:nil];
+                                  [weakSelf.activityIndicator stopAnimating];
+                              }];
     [alertController addAction:action];
     [self presentViewController:alertController
                        animated:YES completion:nil];
 }
+
 
 @end

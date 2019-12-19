@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0D372223A25B4100A39BFB /* BiLuSDKADS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D372123A25B4100A39BFB /* BiLuSDKADS.framework */; };
 		0D0D372423A25B4600A39BFB /* BiLuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */; };
+		0D570D2423AA3A68004B0E19 /* BUAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */; };
+		0D570D2523AA3A68004B0E19 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */; };
+		0D570D2623AA3A68004B0E19 /* AnyThinkSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */; };
+		0D570D2723AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */; };
+		0D570D2823AA3A68004B0E19 /* AnyThinkBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */; };
+		0D570D2923AA3A68004B0E19 /* AnyThinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */; };
+		0D570D2A23AA3A68004B0E19 /* AnyThinkInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */; };
+		0D570D2B23AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */; };
+		0D570D2C23AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */; };
+		0D570D2D23AA3A68004B0E19 /* AnyThinkRewardedVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */; };
+		0D570D2F23AA3B48004B0E19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D2E23AA3B48004B0E19 /* StoreKit.framework */; };
+		0D570D3123AA3B97004B0E19 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570D3023AA3B97004B0E19 /* Accelerate.framework */; };
+		0D570D3423AA3C86004B0E19 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D570D3323AA3C86004B0E19 /* PayViewController.m */; };
+		0DF982AB23AB7C920031B4E7 /* BiLuSDKADS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */; };
 		37364E962382398E00104BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364E952382398E00104BA8 /* AppDelegate.m */; };
 		37364E9F2382398E00104BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364E9D2382398E00104BA8 /* Main.storyboard */; };
 		37364EA12382399000104BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37364EA02382399000104BA8 /* Assets.xcassets */; };
 		37364EA42382399000104BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364EA22382399000104BA8 /* LaunchScreen.storyboard */; };
 		37364EA72382399000104BA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364EA62382399000104BA8 /* main.m */; };
 		37364EB12382399000104BA8 /* BiLuSDKADSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364EB02382399000104BA8 /* BiLuSDKADSDemoTests.m */; };
-		37364EC923823CF900104BA8 /* BUAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EBE23823CF900104BA8 /* BUAdSDK.framework */; };
-		37364ECA23823CF900104BA8 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37364EBF23823CF900104BA8 /* BUAdSDK.bundle */; };
-		37364ECB23823CF900104BA8 /* UpArpuTTRewardedVideoAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC123823CF900104BA8 /* UpArpuTTRewardedVideoAdapter.framework */; };
-		37364ECC23823CF900104BA8 /* UpArpuBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC223823CF900104BA8 /* UpArpuBanner.framework */; };
-		37364ECD23823CF900104BA8 /* UpArpuInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC323823CF900104BA8 /* UpArpuInterstitial.framework */; };
-		37364ECE23823CF900104BA8 /* UpArpuRewardedVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC423823CF900104BA8 /* UpArpuRewardedVideo.framework */; };
-		37364ECF23823CF900104BA8 /* UpArpuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC523823CF900104BA8 /* UpArpuSDK.framework */; };
-		37364ED023823CF900104BA8 /* UpArpuTTInterstitialAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC623823CF900104BA8 /* UpArpuTTInterstitialAdapter.framework */; };
-		37364ED123823CF900104BA8 /* UpArpuTTBannerAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364EC723823CF900104BA8 /* UpArpuTTBannerAdapter.framework */; };
 		37364ED423823E3800104BA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364ED323823E3800104BA8 /* libz.tbd */; };
 		37364ED623823E3F00104BA8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364ED523823E3F00104BA8 /* libc++.tbd */; };
 		37364ED823823E4600104BA8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364ED723823E4600104BA8 /* libsqlite3.tbd */; };
@@ -54,8 +58,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D0D372123A25B4100A39BFB /* BiLuSDKADS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKADS.framework; sourceTree = "<group>"; };
 		0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BiLuSDK.bundle; sourceTree = "<group>"; };
+		0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BUAdSDK.framework; sourceTree = "<group>"; };
+		0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
+		0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AnyThinkSDK.bundle; sourceTree = "<group>"; };
+		0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTRewardedVideoAdapter.framework; sourceTree = "<group>"; };
+		0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkBanner.framework; sourceTree = "<group>"; };
+		0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkSDK.framework; sourceTree = "<group>"; };
+		0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkInterstitial.framework; sourceTree = "<group>"; };
+		0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTInterstitialAdapter.framework; sourceTree = "<group>"; };
+		0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkTTBannerAdapter.framework; sourceTree = "<group>"; };
+		0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyThinkRewardedVideo.framework; sourceTree = "<group>"; };
+		0D570D2E23AA3B48004B0E19 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0D570D3023AA3B97004B0E19 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0D570D3223AA3C86004B0E19 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		0D570D3323AA3C86004B0E19 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKADS.framework; sourceTree = "<group>"; };
 		37364E912382398E00104BA8 /* BiLuSDK_ADS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLuSDK_ADS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364E942382398E00104BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37364E952382398E00104BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,15 +85,6 @@
 		37364EAC2382399000104BA8 /* BiLuSDKADSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiLuSDKADSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364EB02382399000104BA8 /* BiLuSDKADSDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiLuSDKADSDemoTests.m; sourceTree = "<group>"; };
 		37364EB22382399000104BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37364EBE23823CF900104BA8 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BUAdSDK.framework; sourceTree = "<group>"; };
-		37364EBF23823CF900104BA8 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
-		37364EC123823CF900104BA8 /* UpArpuTTRewardedVideoAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuTTRewardedVideoAdapter.framework; sourceTree = "<group>"; };
-		37364EC223823CF900104BA8 /* UpArpuBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuBanner.framework; sourceTree = "<group>"; };
-		37364EC323823CF900104BA8 /* UpArpuInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuInterstitial.framework; sourceTree = "<group>"; };
-		37364EC423823CF900104BA8 /* UpArpuRewardedVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuRewardedVideo.framework; sourceTree = "<group>"; };
-		37364EC523823CF900104BA8 /* UpArpuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuSDK.framework; sourceTree = "<group>"; };
-		37364EC623823CF900104BA8 /* UpArpuTTInterstitialAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuTTInterstitialAdapter.framework; sourceTree = "<group>"; };
-		37364EC723823CF900104BA8 /* UpArpuTTBannerAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UpArpuTTBannerAdapter.framework; sourceTree = "<group>"; };
 		37364ED323823E3800104BA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		37364ED523823E3F00104BA8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		37364ED723823E4600104BA8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -101,31 +110,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37364EF223823FDB00104BA8 /* WebKit.framework in Frameworks */,
-				37364EF023823FD600104BA8 /* MediaPlayer.framework in Frameworks */,
-				37364EEC23823EEF00104BA8 /* CoreMedia.framework in Frameworks */,
-				37364EEE23823FC100104BA8 /* MobileCoreServices.framework in Frameworks */,
-				37364EEA23823EE600104BA8 /* AVFoundation.framework in Frameworks */,
-				37364EE823823EDC00104BA8 /* CoreTelephony.framework in Frameworks */,
-				37364EE623823ED200104BA8 /* SystemConfiguration.framework in Frameworks */,
-				37364EE423823EA000104BA8 /* AdSupport.framework in Frameworks */,
+				37364ED823823E4600104BA8 /* libsqlite3.tbd in Frameworks */,
+				37364ED423823E3800104BA8 /* libz.tbd in Frameworks */,
+				37364ED623823E3F00104BA8 /* libc++.tbd in Frameworks */,
+				37364EDA23823E4D00104BA8 /* libresolv.9.tbd in Frameworks */,
+				0D570D3123AA3B97004B0E19 /* Accelerate.framework in Frameworks */,
 				37364EE223823E7100104BA8 /* CoreMotion.framework in Frameworks */,
+				37364EE423823EA000104BA8 /* AdSupport.framework in Frameworks */,
+				37364EE623823ED200104BA8 /* SystemConfiguration.framework in Frameworks */,
+				37364EE823823EDC00104BA8 /* CoreTelephony.framework in Frameworks */,
+				37364EEA23823EE600104BA8 /* AVFoundation.framework in Frameworks */,
 				37364EE023823E6100104BA8 /* CoreLocation.framework in Frameworks */,
+				37364EEC23823EEF00104BA8 /* CoreMedia.framework in Frameworks */,
+				37364EF023823FD600104BA8 /* MediaPlayer.framework in Frameworks */,
+				37364EF223823FDB00104BA8 /* WebKit.framework in Frameworks */,
+				37364EEE23823FC100104BA8 /* MobileCoreServices.framework in Frameworks */,
+				0D570D2F23AA3B48004B0E19 /* StoreKit.framework in Frameworks */,
+				0D570D2723AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework in Frameworks */,
+				0DF982AB23AB7C920031B4E7 /* BiLuSDKADS.framework in Frameworks */,
+				0D570D2923AA3A68004B0E19 /* AnyThinkSDK.framework in Frameworks */,
+				0D570D2823AA3A68004B0E19 /* AnyThinkBanner.framework in Frameworks */,
+				0D570D2B23AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework in Frameworks */,
+				0D570D2D23AA3A68004B0E19 /* AnyThinkRewardedVideo.framework in Frameworks */,
+				0D570D2A23AA3A68004B0E19 /* AnyThinkInterstitial.framework in Frameworks */,
+				0D570D2C23AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework in Frameworks */,
 				37364EDE23823E5B00104BA8 /* QuartzCore.framework in Frameworks */,
 				37364EDC23823E5400104BA8 /* libxml2.tbd in Frameworks */,
-				37364EDA23823E4D00104BA8 /* libresolv.9.tbd in Frameworks */,
-				37364ED823823E4600104BA8 /* libsqlite3.tbd in Frameworks */,
-				37364ED623823E3F00104BA8 /* libc++.tbd in Frameworks */,
-				37364ED423823E3800104BA8 /* libz.tbd in Frameworks */,
-				37364ECE23823CF900104BA8 /* UpArpuRewardedVideo.framework in Frameworks */,
-				37364ECC23823CF900104BA8 /* UpArpuBanner.framework in Frameworks */,
-				37364ED023823CF900104BA8 /* UpArpuTTInterstitialAdapter.framework in Frameworks */,
-				37364ECD23823CF900104BA8 /* UpArpuInterstitial.framework in Frameworks */,
-				0D0D372223A25B4100A39BFB /* BiLuSDKADS.framework in Frameworks */,
-				37364EC923823CF900104BA8 /* BUAdSDK.framework in Frameworks */,
-				37364ECF23823CF900104BA8 /* UpArpuSDK.framework in Frameworks */,
-				37364ECB23823CF900104BA8 /* UpArpuTTRewardedVideoAdapter.framework in Frameworks */,
-				37364ED123823CF900104BA8 /* UpArpuTTBannerAdapter.framework in Frameworks */,
+				0D570D2423AA3A68004B0E19 /* BUAdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D570D1823AA3A68004B0E19 /* AdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0D570D1923AA3A68004B0E19 /* BUAdSDK.framework */,
+				0D570D1A23AA3A68004B0E19 /* BUAdSDK.bundle */,
+			);
+			name = AdsSDK;
+			path = ../../../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK;
+			sourceTree = "<group>";
+		};
+		0D570D1B23AA3A68004B0E19 /* ArpuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0D570D1C23AA3A68004B0E19 /* AnyThinkSDK.bundle */,
+				0D570D1D23AA3A68004B0E19 /* AnyThinkTTRewardedVideoAdapter.framework */,
+				0D570D1E23AA3A68004B0E19 /* AnyThinkBanner.framework */,
+				0D570D1F23AA3A68004B0E19 /* AnyThinkSDK.framework */,
+				0D570D2023AA3A68004B0E19 /* AnyThinkInterstitial.framework */,
+				0D570D2123AA3A68004B0E19 /* AnyThinkTTInterstitialAdapter.framework */,
+				0D570D2223AA3A68004B0E19 /* AnyThinkTTBannerAdapter.framework */,
+				0D570D2323AA3A68004B0E19 /* AnyThinkRewardedVideo.framework */,
+			);
+			name = ArpuSDK;
+			path = ../../../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK;
+			sourceTree = "<group>";
+		};
 		37364E882382398E00104BA8 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +208,8 @@
 				37364E9D2382398E00104BA8 /* Main.storyboard */,
 				52BCF74923828B6700BF3763 /* HomeViewController.h */,
 				52BCF74A23828B6700BF3763 /* HomeViewController.m */,
+				0D570D3223AA3C86004B0E19 /* PayViewController.h */,
+				0D570D3323AA3C86004B0E19 /* PayViewController.m */,
 			);
 			path = BiLuSDKADSDemo;
 			sourceTree = "<group>";
@@ -187,40 +226,19 @@
 		37364EBB23823CF900104BA8 /* BiLuSDKADS */ = {
 			isa = PBXGroup;
 			children = (
+				0DF982AA23AB7C920031B4E7 /* BiLuSDKADS.framework */,
+				0D570D1823AA3A68004B0E19 /* AdsSDK */,
+				0D570D1B23AA3A68004B0E19 /* ArpuSDK */,
 				0D0D372323A25B4600A39BFB /* BiLuSDK.bundle */,
-				0D0D372123A25B4100A39BFB /* BiLuSDKADS.framework */,
-				37364EBD23823CF900104BA8 /* AdsSDK */,
-				37364EC023823CF900104BA8 /* ArpuSDK */,
 			);
 			path = BiLuSDKADS;
-			sourceTree = "<group>";
-		};
-		37364EBD23823CF900104BA8 /* AdsSDK */ = {
-			isa = PBXGroup;
-			children = (
-				37364EBE23823CF900104BA8 /* BUAdSDK.framework */,
-				37364EBF23823CF900104BA8 /* BUAdSDK.bundle */,
-			);
-			path = AdsSDK;
-			sourceTree = "<group>";
-		};
-		37364EC023823CF900104BA8 /* ArpuSDK */ = {
-			isa = PBXGroup;
-			children = (
-				37364EC123823CF900104BA8 /* UpArpuTTRewardedVideoAdapter.framework */,
-				37364EC223823CF900104BA8 /* UpArpuBanner.framework */,
-				37364EC323823CF900104BA8 /* UpArpuInterstitial.framework */,
-				37364EC423823CF900104BA8 /* UpArpuRewardedVideo.framework */,
-				37364EC523823CF900104BA8 /* UpArpuSDK.framework */,
-				37364EC623823CF900104BA8 /* UpArpuTTInterstitialAdapter.framework */,
-				37364EC723823CF900104BA8 /* UpArpuTTBannerAdapter.framework */,
-			);
-			path = ArpuSDK;
 			sourceTree = "<group>";
 		};
 		37364ED223823E3800104BA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D570D3023AA3B97004B0E19 /* Accelerate.framework */,
+				0D570D2E23AA3B48004B0E19 /* StoreKit.framework */,
 				37364EF123823FDB00104BA8 /* WebKit.framework */,
 				37364EEF23823FD600104BA8 /* MediaPlayer.framework */,
 				37364EED23823FC100104BA8 /* MobileCoreServices.framework */,
@@ -321,11 +339,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D570D2623AA3A68004B0E19 /* AnyThinkSDK.bundle in Resources */,
 				0D0D372423A25B4600A39BFB /* BiLuSDK.bundle in Resources */,
-				37364ECA23823CF900104BA8 /* BUAdSDK.bundle in Resources */,
 				37364EA42382399000104BA8 /* LaunchScreen.storyboard in Resources */,
 				37364EA12382399000104BA8 /* Assets.xcassets in Resources */,
 				37364E9F2382398E00104BA8 /* Main.storyboard in Resources */,
+				0D570D2523AA3A68004B0E19 /* BUAdSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +365,7 @@
 				37364E962382398E00104BA8 /* AppDelegate.m in Sources */,
 				37364EA72382399000104BA8 /* main.m in Sources */,
 				52BCF74B23828B6700BF3763 /* HomeViewController.m in Sources */,
+				0D570D3423AA3C86004B0E19 /* PayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,9 +527,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/BiLuSDKADSDemo/BiLuSDKADS\"",
+					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK\"",
+					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK\"",
 					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS",
-					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/AdsSDK",
-					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/ArpuSDK",
 				);
 				INFOPLIST_FILE = BiLuSDKADSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -518,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm44;
 				PRODUCT_NAME = BiLuSDK_ADS;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -535,9 +556,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/BiLuSDKADSDemo/BiLuSDKADS\"",
+					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/ArpuSDK\"",
+					"\"$(SRCROOT)/../../Dev/bilu_sdk_ads/BiLuSDKDevDemo/BiLuSDK/ThirdParty/AdsSDK\"",
 					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS",
-					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/AdsSDK",
-					"$(PROJECT_DIR)/BiLuSDKADSDemo/BiLuSDKADS/ArpuSDK",
 				);
 				INFOPLIST_FILE = BiLuSDKADSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -546,7 +568,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm44;
 				PRODUCT_NAME = BiLuSDK_ADS;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
